@@ -61,7 +61,7 @@ var lon;
 // );
 function cityData() {
   fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?limit=5&q=${textEl.value}&units=metric&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?limit=5&q=${textEl.value}&units=metric&appid=${apiKey}`
   )
     .then(function (result) {
       return result.json();
